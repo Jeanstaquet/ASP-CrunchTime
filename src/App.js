@@ -10,19 +10,23 @@ import Searches from './containers/Searches'
 
 function App() {
     return (
-        <Router>
-            <Switch>
-                <Route path="/Explore" exact component={Explore} />
-                <Route path="/Favorite" exact component={Favorite} />
-                <Route
-                    path="/RecipeDescription"
-                    exact
-                    component={RecipeDescription}
-                />
-                <Route path="/Searches" exact component={Searches} />
-                <Route path="/" exact component={AccountCreation} />
-            </Switch>
-        </Router>
+        <div className="app">
+            <div className="phone">
+                <Router>
+                    <Switch>
+                        <Route path="/Explore" exact component={Explore} />
+                        <Route path="/Favorite" exact component={Favorite} />
+                        <Route
+                            path="/RecipeDescription"
+                            exact
+                            component={RecipeDescription}
+                        />
+                        <Route path="/Searches" exact component={Searches} />
+                        <Route path="/" exact component={AccountCreation} />
+                    </Switch>
+                </Router>
+            </div>
+        </div>
     )
 }
 
