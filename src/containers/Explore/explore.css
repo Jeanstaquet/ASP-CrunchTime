@@ -1,0 +1,124 @@
+.container_Explore {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.banner_Explore {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-bottom: 24px;
+}
+
+.banner_titleContainer_Explore {
+    display: flex;
+}
+
+.bannerIcon_Explore {
+    width: 40px;
+    height: 40px;
+    color: #fff;
+    font-weight: bold;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    border-radius: 50%;
+    background-color: aqua;
+    margin-right: 35px;
+}
+
+.bannerTitle_Explore {
+    font-weight: bold;
+    font-size: 20px;
+}
+
+.buttons_Explore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+}
+
+.buttons_Explore button {
+    color: black;
+    border-radius: 30px;
+    background: linear-gradient(
+        45deg,
+        rgba(17, 169, 255) 0%,
+        rgba(3, 241, 204) 100%
+    );
+    border: 0;
+    font-size: 14px;
+    padding: 10px;
+    font-weight: bold;
+}
+
+.buttons_Explore div {
+    font-size: 14px;
+}
+
+.recipeItemTop_Explore {
+    width: 45%;
+}
+
+img {
+    width: 100%;
+    border-radius: 20px;
+    height: auto;
+}
+
+.recipeListTop_Explore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.recipeItemTitleTop_Explore {
+    text-align: center;
+    font-weight: 600;
+    margin-bottom: 22px;
+}
+
+.recipeItemDescTop_Explore {
+    text-align: center;
+    font-size: 14px;
+    margin-bottom: 24px;
+}
+
+.recipeItemStarContTop_Explore {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+    font-size: 12px;
+    color: gray;
+}
+
+.stars_Explore * {
+    color: darkgreen;
+}
+
+.recipeListMid_Explore {
+    display: flex;
+    justify-content: space-evenly;
+    align-items: center;
+}
+
+.recipeItemMid_Explore {
+    width: 30%;
+}
+
+.recipeListBottom_Explore {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-wrap: wrap;
+    overflow-y: scroll;
+    max-height: 300px;
+}
+
+.recipeListBottom_Explore img {
+    width: 45%;
+    margin-bottom: 20px;
+}
