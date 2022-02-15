@@ -1,0 +1,35 @@
+.container_Account {
+    padding: 20px;
+    background-color: #fff;
+}
+
+.pageName_Account {
+    margin-bottom: 30px;
+    font-weight: bold;
+    display: flex;
+    align-items: center;
+}
+
+.pageName_Account div {
+    margin-left: 50px;
+}
+
+.title_Account {
+    font-size: 32px;
+    font-weight: bold;
+    margin-bottom: 65px;
+}
+
+.btn_Account {
+    width: 100%;
+    color: black;
+    border-radius: 12px;
+    background: linear-gradient(
+        45deg,
+        rgba(17, 169, 255) 0%,
+        rgba(3, 241, 204) 100%
+    );
+    border: 0;
+    font-weight: bold;
+    padding: 10px;
+}

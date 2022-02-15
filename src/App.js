@@ -7,6 +7,7 @@ import Explore from './containers/Explore'
 import Favorite from './containers/Favorite'
 import RecipeDescription from './containers/RecipeDescription/RecipeDescription'
 import Searches from './containers/Searches'
+import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
     return (
