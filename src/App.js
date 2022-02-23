@@ -13,7 +13,8 @@ function App() {
     return (
         <div className="app">
             <div className="phone">
-                <RecipeDescription />
+                <RecipeDescription/>
+
                 {/* <Router>
                     <Switch>
                         <Route path="/Explore" exact component={Explore} />
@@ -32,4 +33,4 @@ function App() {
     )
 }
 
-export default App
+export default App;
