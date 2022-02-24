@@ -1,3 +1,8 @@
+/* .Recipe-Page {
+    overflow-y: scroll;
+    scroll-behavior: smooth;
+
+} */
 #recipe-name {
     font-size: large;
     font-weight: bold;
@@ -7,7 +12,6 @@
     width: 100%;
     border-radius: 20px;
 }
-
 .Time {
     font-size: medium;
     font-weight: bold;
@@ -21,7 +25,33 @@
 .Time {
     text-align: center;
 }
-
 .sectionTitle {
     text-align: center;
+}
+.review {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+.user {
+    padding-left: 7%;
+    padding-right: 3%;
+}
+.user-rating {
+    padding-left: 7%;
+    padding-right: 3%;
+}
+.review-text {
+    padding-left: 5%;
+    padding-right: 3%;
+
+}
+
+.stars {
+    text-align: center;
+    color: darkgreen;
+}
+#star1, #star2, #star3 {
+    color: darkgreen;
 }

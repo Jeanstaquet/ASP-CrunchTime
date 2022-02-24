@@ -6,13 +6,15 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
 import smallLogo from '../../images/smallLogo.png'
 import img1 from '../../assets/images/img1.jpeg'
-import { faMagnifyingGlass, faStar } from '@fortawesome/free-solid-svg-icons'
+import { faStar } from '@fortawesome/free-solid-svg-icons'
+import { Card } from 'react-bootstrap'
+
 
 
 
 const RecipeDescription = () => {
     return (
-        <div className="Recipe_Page">
+        <div className="Recipe-Page">
             <div className="topBar">
                 <Navbar expand = "lg" variant="light" bg="light">
                     <img className='smallLogo' src={smallLogo} alt="CT logo"/>
@@ -34,7 +36,7 @@ const RecipeDescription = () => {
 
             <div className="ingredientList">
                 <div className='sectionTitle'>Here's what you'll need!</div>
-                <div className='Ingredients'>
+                <div className='list'>
                     <ul>
                         <li>Cream cheese</li>
                         <li>Parmesan</li>
@@ -42,31 +44,47 @@ const RecipeDescription = () => {
                 </div>
             </div>
             <div className="instructions">
-            <div className='sectionTitle'>How to make it:</div>
-                <ol>
-                    <li>First you do a thing</li>
-                    <li>Then you do another thing</li>
-                    <li>And there's some other stuff after that</li>
-                    <li>Thought you were done? lol no there's more but trust me it pays off </li>
-                    <li>You're almost done, just do this last thing. Then salt to taste, plate it up real nice, take a photo for social media(obviously) and......NOW you can eat :) </li>
-                </ol>
-            </div>
-
-
-            <div className="ratings">
-                
-                <div className="stars_Explore">
-                                <FontAwesomeIcon icon={faStar} />
-                                <FontAwesomeIcon icon={faStar} />
-                                <FontAwesomeIcon icon={faStar} />
-                                <FontAwesomeIcon icon={faStar} />
-                                <FontAwesomeIcon icon={faStar} />
-                            </div>
+                <div className='sectionTitle'>How to make it:</div>
+                <div className='list'>
+                    <ol>
+                        <li>First you do a thing</li>
+                        <li>Then you do another thing</li>
+                        <li>And there's some other stuff after that</li>
+                        <li>Thought you were done? lol no there's more but trust me it pays off </li>
+                        <li>Do one last thing. Then salt to taste, plate it up real nice, take a photo to prove you cooked
+                        and......now you can eat :) </li>
+                    </ol>
                 </div>
-            <div className="reviews">Recipe reviews</div>
-
+            </div>
+            <div className="ratings">
+                <div className="stars">
+                    <FontAwesomeIcon id='total-star1' icon={faStar} />
+                    <FontAwesomeIcon id='total-star2' icon={faStar} />
+                    <FontAwesomeIcon id='total-star3' icon={faStar} />
+                    <FontAwesomeIcon id='total-star4' icon={faStar} />
+                    <FontAwesomeIcon id='total-star5' icon={faStar} />
+                </div>
+            </div>
+           
+            <div className='review'>
+                <Card className = "review-card">
+                    <Nav>
+                        <div className='user'>Someone's name</div>
+                        <div className='user-rating'>
+                            <FontAwesomeIcon id='star1' icon={faStar} />
+                            <FontAwesomeIcon id='star2' icon={faStar} />
+                            <FontAwesomeIcon id='star3' icon={faStar} />
+                            <FontAwesomeIcon id='star4' icon={faStar} />
+                            <FontAwesomeIcon id='star5' icon={faStar} />
+                        </div>
+                    </Nav>
+                    
+                    <div className='review-text'>
+                        <p>Here's some reasons why this person liked or disliked the recipe</p>
+                    </div>
+                </Card>
+            </div>
         </div>
-        )
-
+    )
 }
 export default RecipeDescription;
