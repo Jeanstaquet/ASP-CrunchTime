@@ -1,12 +1,17 @@
-/* .Recipe-Page {
-    overflow-y: scroll;
-    scroll-behavior: smooth;
 
-} */
+.recipe-body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
 #recipe-name {
     font-size: large;
     font-weight: bold;
-
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#author-name {
+    padding-left: 3%;
+    padding-right: 3%;
 }
 .recipeImg {
     width: 100%;
