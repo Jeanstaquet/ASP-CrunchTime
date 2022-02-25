@@ -1,0 +1,62 @@
+
+.recipe-body {
+    scroll-behavior: smooth;
+    overflow-y: scroll;
+}
+#recipe-name {
+    font-size: large;
+    font-weight: bold;
+    padding-left: 3%;
+    padding-right: 3%;
+}
+#author-name {
+    padding-left: 3%;
+    padding-right: 3%;
+}
+.recipeImg {
+    width: 100%;
+    border-radius: 20px;
+}
+.Time {
+    font-size: medium;
+    font-weight: bold;
+}
+.topBar {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+.Time {
+    text-align: center;
+}
+.sectionTitle {
+    text-align: center;
+}
+.review {
+    padding-left: 3%;
+    padding-right: 3%;
+    padding-bottom: 4%;
+    padding-top: 2%;
+}
+.user {
+    padding-left: 7%;
+    padding-right: 3%;
+}
+.user-rating {
+    padding-left: 7%;
+    padding-right: 3%;
+}
+.review-text {
+    padding-left: 5%;
+    padding-right: 3%;
+
+}
+
+.stars {
+    text-align: center;
+    color: darkgreen;
+}
+#star1, #star2, #star3 {
+    color: darkgreen;
+}

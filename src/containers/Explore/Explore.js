@@ -19,7 +19,7 @@ const Explore = () => {
             </div>
             <div className="recipeListTop_Explore">
                 <div className="recipeItemTop_Explore">
-                    <img src={img1} />
+                    <img src={img1} alt="placeholder"/>
                     <div className="recipeItemTitleTop_Explore">
                         Chicken Curry
                     </div>
@@ -36,7 +36,7 @@ const Explore = () => {
                     </div>
                 </div>
                 <div className="recipeItemTop_Explore">
-                    <img src={img1} />
+                    <img src={img1} alt="placeholder" />
                     <div className="recipeItemTitleTop_Explore">
                         Chicken Curry
                     </div>
@@ -56,28 +56,28 @@ const Explore = () => {
             <hr></hr>
             <div className="recipeListMid_Explore">
                 <div className="recipeItemMid_Explore">
-                    <img src={img1} />
+                    <img src={img1} alt="placeholder" />
                     <div>Seasonal Recipies</div>
                 </div>
                 <div className="recipeItemMid_Explore">
-                    <img src={img1} />
+                    <img src={img1} alt="placeholder"/>
                     <div>Seasonal Recipies</div>
                 </div>
                 <div className="recipeItemMid_Explore">
-                    <img src={img1} />
+                    <img src={img1} alt="placeholder"/>
                     <div>Seasonal Recipies</div>
                 </div>
             </div>
             <hr></hr>
             <div className="recipeListBottom_Explore">
-                <img src={img1} />
-                <img src={img1} />
-                <img src={img1} />
-                <img src={img1} />
-                <img src={img1} />
-                <img src={img1} />
-                <img src={img1} />
-                <img src={img1} />
+                <img src={img1}alt="placeholder" />
+                <img src={img1} alt="placeholder"/>
+                <img src={img1} alt="placeholder"/>
+                <img src={img1} alt="placeholder"/>
+                <img src={img1} alt="placeholder"/>
+                <img src={img1} alt="placeholder"/>
+                <img src={img1} alt="placeholder"/>
+                <img src={img1} alt="placeholder"/>
             </div>
         </div>
     )
