@@ -5,7 +5,7 @@ import { BrowserRouter as Router } from 'react-router-dom'
 import AccountCreation from './containers/AccountCreation'
 import Explore from './containers/Explore'
 import Favorite from './containers/Favorite'
-import RecipeDescription from './containers/RecipeDescription/RecipeDescription'
+import RecipeDescription from './containers/RecipeDescription'
 import Searches from './containers/Searches'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
@@ -31,4 +31,4 @@ function App() {
     )
 }
 
-export default App;
+export default App
