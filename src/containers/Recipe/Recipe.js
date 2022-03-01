@@ -1,24 +1,25 @@
 import React from 'react'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import './RecipeDescription.css'
-import { Nav, Navbar } from 'react-bootstrap'
+import './Recipe.css'
+import { Container, Nav, Navbar } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
 import smallLogo from '../../images/smallLogo.png'
 import img1 from '../../assets/images/img1.jpeg'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { Card } from 'react-bootstrap'
-import * as Scroll from 'react-scroll';
+//import * as Scroll from 'react-scroll';
 
 
 
 
-const RecipeDescription = () => {
+const Recipe = () => {
     return (
+        
         <div className="Recipe-Page">
             <div className="topBar">
                 <Navbar expand = "lg" variant="light" bg="light">
-                    <img className='smallLogo' src={smallLogo} alt="CT logo"/>
+                    <img className='smallLogo' id='CTlogo'src={smallLogo} alt="CT logo"/>
                     <div className="recipeName" id='recipe-name'>Recipe Name</div>
                     <div className="recipeName" id='author-name'>Author Name</div>
                     <FontAwesomeIcon icon={faArrowLeftLong} />
@@ -28,7 +29,7 @@ const RecipeDescription = () => {
             <div className="recipePhoto">
                 <img className='recipeImg' src={img1} alt="Pretty food"/>
             </div>
-            <div className='recipe-body'>
+            <Container fluid="md" className='recipe-body'>
                 <div className="Time">
                     <div className ="PrepTime">Prep Time:</div>
                     <div className ="CookTime">Cook Time:</div>
@@ -87,9 +88,9 @@ const RecipeDescription = () => {
                         </div>
                     </Card>
                 </div>
-            </div>
+            </Container>
            
         </div>
     )
 }
-export default RecipeDescription;
+export default Recipe;

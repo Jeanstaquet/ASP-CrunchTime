@@ -1,7 +1,8 @@
 
 .recipe-body {
-    scroll-behavior: smooth;
     overflow-y: scroll;
+  
+  
 }
 #recipe-name {
     font-size: large;
@@ -16,6 +17,10 @@
 .recipeImg {
     width: 100%;
     border-radius: 20px;
+}
+#CTlogo {
+   max-width: fit-content;
+   max-height: fit-content;
 }
 .Time {
     font-size: medium;
