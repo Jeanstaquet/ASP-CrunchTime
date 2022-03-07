@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import { recipes } from './recipes';
+//import { recipes } from './recipes';
 import SearchBar from './SearchBar';
 import RecipeCard from './RecipeCard';
 import { BsArrowUpLeft } from "react-icons/bs";
@@ -31,7 +31,7 @@ const Searches = () => {
     }
 
     const viewRecipe = (e) => {
-        const name = e.target.children[0].innerHTML;
+        const name = e.target.children[0].innerText;
         const timestamp = e.timeStamp;
         var new_arr = lastViewed;
         new_arr = findDuplicates(new_arr, name, timestamp);

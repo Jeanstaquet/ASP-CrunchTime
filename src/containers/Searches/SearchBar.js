@@ -1,5 +1,5 @@
 import React, { useState, useEffect } from 'react';
-import CTLogo from '../../assets/CTLogo';
+import CTLogo from './CTLogo';
 
 const SearchBar = (props) => {
     const [searchTerm, setSearchTerm] = useState("");
