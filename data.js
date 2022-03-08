@@ -1,3 +1,5 @@
+// Source: https://github.com/raywenderlich/recipes/blob/master/Recipes.json
+
 export const data = [
     {
         name: 'Crock Pot Roast',
