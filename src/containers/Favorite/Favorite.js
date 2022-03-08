@@ -1,7 +1,8 @@
-import React from 'react'
+import React, { Component, PropTypes } from 'react';
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 import { Container, Nav, Navbar } from 'react-bootstrap'
+import { Row, Col } from 'react-bootstrap';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
 import smallLogo from '../../images/smallLogo.png'
@@ -10,11 +11,12 @@ import img1 from '../../assets/images/img1.jpeg'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { Card } from 'react-bootstrap'
 import './Favorite.css'
+import { Link } from 'react-router-dom';
+import { propTypes } from 'react-bootstrap/esm/Image';
 //import * as Scroll from 'react-scroll';
 
 const Favorites = () => {
     return (
-
         <div className="Favorite-Page">
             <div className="topBar">
                 <Navbar expand="lg" variant="light" bg="light">
@@ -24,31 +26,52 @@ const Favorites = () => {
                 </Navbar>
             </div>
 
-            <Card className='recipe-card'>
+            <Container className='content-body'>
+                <Row className='layout-row'>
+                    <Col className='layout-col'>
+                        <Card className='recipe-card'>
+                            <Navbar className='topBar' expand="lg" variant="light" bg="light">
+                                <img className='recipe-photo' src={img1} alt="picture of meal" />
+                                <div className="page title" id='user-favorites'>A favorite</div>
+                                <img className='icon' src={lightModeHeart} alt="favorite icon" />
+                            </Navbar>
 
+                            <Container typeof='fluid' className='Favorite-List'>
+                                <div className="ratings">
+                                    <div className="stars">
+                                        <FontAwesomeIcon id='total-star1' icon={faStar} />
+                                        <FontAwesomeIcon id='total-star2' icon={faStar} />
+                                        <FontAwesomeIcon id='total-star3' icon={faStar} />
+                                        <FontAwesomeIcon id='total-star4' icon={faStar} />
+                                        <FontAwesomeIcon id='total-star5' icon={faStar} />
+                                    </div>
+                                </div>
+                            </Container>
+                        </Card>
+                    </Col>
+                    <Col>
+                        <Card className='recipe-card'>
+                            <Navbar className='topBar' expand="lg" variant="light" bg="light">
+                                <img className='recipe-photo' src={img1} alt="food from the recipe" />
+                                <div className="page title" id='user-favorites'>A favorite</div>
+                                <img className='icon' src={lightModeHeart} alt="favorite icon" />
+                            </Navbar>
 
-                <Navbar className='topBar' expand="lg" variant="light" bg="light">
-
-                    <img className='recipe-photo' src={img1} alt="picture of meal" />
-                    <div className="page title" id='user-favorites'>A favorite</div>
-                    <img className='icon' src={lightModeHeart} alt="favorite icon" />
-                </Navbar>
-
-                <Container fluid="md" className='Favorite-List'>
-                    <div className="ratings">
-                        <div className="stars">
-                            <FontAwesomeIcon id='total-star1' icon={faStar} />
-                            <FontAwesomeIcon id='total-star2' icon={faStar} />
-                            <FontAwesomeIcon id='total-star3' icon={faStar} />
-                            <FontAwesomeIcon id='total-star4' icon={faStar} />
-                            <FontAwesomeIcon id='total-star5' icon={faStar} />
-                        </div>
-                    </div>
-                </Container>
-
-            </Card>
-
-
+                            <Container typeof='fluid' className='Favorite-List'>
+                                <div className="ratings">
+                                    <div className="stars">
+                                        <FontAwesomeIcon id='total-star1' icon={faStar} />
+                                        <FontAwesomeIcon id='total-star2' icon={faStar} />
+                                        <FontAwesomeIcon id='total-star3' icon={faStar} />
+                                        <FontAwesomeIcon id='total-star4' icon={faStar} />
+                                        <FontAwesomeIcon id='total-star5' icon={faStar} />
+                                    </div>
+                                </div>
+                            </Container>
+                        </Card>
+                    </Col>
+                </Row>
+            </Container>
         </div>
     )
 }
