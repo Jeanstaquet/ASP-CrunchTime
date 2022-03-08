@@ -1,6 +1,6 @@
 // Source: https://github.com/raywenderlich/recipes/blob/master/Recipes.json
 
-export const data = [
+module.exports.data = [
     {
         name: 'Crock Pot Roast',
         ingredients: [

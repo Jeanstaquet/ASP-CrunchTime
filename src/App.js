@@ -16,9 +16,9 @@ function App() {
                 <Router>
                     <Switch>
                         <Route path="/Explore" exact component={Explore} />
-                        
+
                         <Route path="/Favorite" exact component={Favorite} />
-                        <Route path="/Recipe" exact  component={Recipe} />
+                        <Route path="/Recipe" exact component={Recipe} />
                         <Route path="/Searches" exact component={Searches} />
                         <Route path="/" exact component={AccountCreation} />
                     </Switch>

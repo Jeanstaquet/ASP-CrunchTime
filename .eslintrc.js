@@ -15,6 +15,7 @@ module.exports = {
     plugins: ['react'],
     rules: {
         'no-mixed-spaces-and-tabs': 0,
+        'react/no-unescaped-entities': 0,
         'react/prop-types': 0,
     },
 }
