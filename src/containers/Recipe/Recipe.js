@@ -11,8 +11,6 @@ import { Card } from 'react-bootstrap'
 //import * as Scroll from 'react-scroll';
 
 
-
-
 const Recipe = () => {
     return (
         
@@ -25,11 +23,10 @@ const Recipe = () => {
                     <FontAwesomeIcon icon={faArrowLeftLong} />
                 </Navbar>
             </div>
-        
             <div className="recipePhoto">
                 <img className='recipeImg' src={img1} alt="Pretty food"/>
             </div>
-            <Container fluid="md" className='recipe-body'>
+            <Container typeof='fluid' className='recipe-body'>
                 <div className="Time">
                     <div className ="PrepTime">Prep Time:</div>
                     <div className ="CookTime">Cook Time:</div>
@@ -68,8 +65,7 @@ const Recipe = () => {
                         <FontAwesomeIcon id='total-star4' icon={faStar} />
                         <FontAwesomeIcon id='total-star5' icon={faStar} />
                     </div>
-                </div>
-            
+                </div>  
                 <div className='review'>
                     <Card className = "review-card">
                         <Nav>
@@ -81,15 +77,13 @@ const Recipe = () => {
                                 <FontAwesomeIcon id='star4' icon={faStar} />
                                 <FontAwesomeIcon id='star5' icon={faStar} />
                             </div>
-                        </Nav>
-                        
+                        </Nav>       
                         <div className='review-text'>
                             <p>Here's some reasons why this person liked or disliked the recipe</p>
                         </div>
                     </Card>
                 </div>
             </Container>
-           
         </div>
     )
 }
