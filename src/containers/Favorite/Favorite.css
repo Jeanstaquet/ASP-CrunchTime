@@ -7,25 +7,39 @@
 .page-title {
     display:-webkit-inline-box;
     float:none;
+    align-items: center;
 }
 
+
 .icon {
-    max-width: fit-content;
-    max-height: fit-content;
-    color: darkgreen;
+    max-width: min-content;
+    max-height: min-content;
+    color: black;
 }
 .topBar {
+    /* keep the elements in the top bar separated enough to be clean and readable: */
     padding-left: 2%;
     padding-right: 2%;
     padding-bottom: 2%;
     padding-top: 2%;
 }
 .recipe-card {
+    /* border radius to make the card look cleaner (curved edges) */
     border-radius: 15%;
+    /* Recipe card should be as big as it can be to show all the contents */
     max-width: max-content;
     max-height: max-content;
+    background-color: aquamarine;
     /* margin-left: auto; */
    
+}
+.recipe-photo {
+    max-width:min-content;
+    max-height: min-content;
+    padding-left: 2%;
+    padding-right: 2%;
+    padding-bottom: 2%;
+    padding-top: 2%
 }
 /* .layout-row {
  max-width: 100%;
