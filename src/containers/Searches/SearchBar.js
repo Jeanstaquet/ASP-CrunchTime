@@ -1,5 +1,6 @@
 import React, { useState, useEffect } from 'react';
-import CTLogo from './CTLogo';
+import smallLogo from '../../images/smallLogo.png'
+import './search.css';
 
 const SearchBar = (props) => {
     const [searchTerm, setSearchTerm] = useState("");
@@ -7,7 +8,6 @@ const SearchBar = (props) => {
 
     const handleKeyUp = (event) => {
         if (event.key == "Enter") {
-            //setRecentSearches(prevArr => [...prevArr, event.target.value]);
             props.showRecentSearches(event.target.value);
             setSearchTerm("");
         }
@@ -19,7 +19,7 @@ const SearchBar = (props) => {
 
     return (
         <div className="search-bar-container">            
-            <CTLogo />            
+            <img className="logo-small" src={smallLogo} />            
             <div className="search-bar">
                 <input
                     type="text"
@@ -35,4 +35,4 @@ const SearchBar = (props) => {
     )
 }
 
-export default SearchBar
+export default SearchBar;

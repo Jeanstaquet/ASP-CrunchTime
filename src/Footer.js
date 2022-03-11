@@ -1,30 +1,17 @@
-const sun = require('./assets/images/sun.png');
-const moon = require('./assets/images/moon.png');
-const heart = require('./assets/images/heart.png');
-const stick = require('./assets/images/stick.png');
+import React from 'react';
+import { Link, useHistory } from 'react-router-dom';
+const heart = require('./images/lightModeHeart.png');
+const user = require('./images/User.png');
+import {AiFillCaretLeft} from 'react-icons/ai';
 
-const Footer = (props) => {
-	const handleClick = (e) => {
-		var colour;
-		switch(props.bgc) {
-			case 'white':
-				colour = 'lightgrey';
-				break;
-			case 'lightgrey':
-				colour = 'white';
-		}
-		return props.bgcFunc(colour);
-	}
+const Footer = () => {
+	const history = useHistory();
 
 	return (
 		<ul className="footer">
-			{(props.bgc === 'lightgrey') ? (
-				<li onClick={handleClick}><img className = "picture" src={sun}/></li>
-			) : (
-				<li onClick={handleClick}><img className = "picture" src={moon}/></li>
-			)}
-			<li><img className = "picture" src={heart}/></li>
-			<li><img className = "picture" src={stick}/></li>
+			<li><AiFillCaretLeft onClick={() => history.goBack()}/></li>
+			<li><Link to="/Favorite"><img className = "picture" src={heart}/></Link></li>
+			<li><Link to="/"><img className = "picture" src={user}/></Link></li>
 		</ul>
 	)
 }

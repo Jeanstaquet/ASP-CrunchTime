@@ -8,6 +8,8 @@
 
 .phone {
     width: 390px;
+    max-height: 844px;
+    overflow-y: scroll;
     height: 844px;
     /*background-color: white;*/
 }

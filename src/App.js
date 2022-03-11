@@ -1,41 +1,45 @@
 import './App.css'
-import React, {useState, useEffect} from 'react'
+import React, {useState} from 'react'
 import { Route, Switch } from 'react-router-dom'
 import { BrowserRouter as Router } from 'react-router-dom'
 import AccountCreation from './containers/AccountCreation'
 import Explore from './containers/Explore'
 import Favorite from './containers/Favorite'
-//import RecipeDescription from './containers/RecipeDescription/RecipeDescription'
-import Searches from './containers/Searches'
+import Recipe from './containers/Recipe'
+import Searches from './containers/Searches/Searches';
 import Footer from './Footer'
+import Modal from './Modal'
 import 'bootstrap/dist/css/bootstrap.min.css'
 
 function App() {
-    const [color, setColor] = useState('lightgrey');
-    
-    const setbgc = (val) => {
-        //console.log(val);
-        setColor(val);
+    const [openModal, setOpenModal] = useState(false);
+    const [modalData, setModalData] = useState("");
+
+    const test = (param) => {
+        setModalData(param);
+        setOpenModal(true);
     }
 
-    useEffect(() => {
-        setbgc(color);
-    }, [color]);
-
     return (
-        <div className="app" style={{backgroundColor: color}}>
+        <div className="app">
             <div className="phone">
                 <div className="wrapper">
                 <Router>
                     <Switch>
                         <Route path="/Explore" exact component={Explore} />
+
                         <Route path="/Favorite" exact component={Favorite} />
-                        
+                        <Route path="/Recipe" exact component={Recipe} />
                         <Route path="/Searches" exact component={Searches} />
-                        <Route path="/" exact component={AccountCreation} />
+                        <Route path="/" render={() => <AccountCreation func={test}/>} />
                     </Switch>
+                    <Footer />
                 </Router>
-                <Footer bgc={color} bgcFunc={setbgc}/>
+                {openModal ? (
+                    <Modal data={modalData} onClose={() => setOpenModal(false)} />
+                ) : null
+                }
+                
                 </div>
             </div>
         </div>

@@ -1,8 +1,8 @@
 import React, { useState, useEffect } from 'react';
-//import { recipes } from './recipes';
 import SearchBar from './SearchBar';
 import RecipeCard from './RecipeCard';
 import { BsArrowUpLeft } from "react-icons/bs";
+import './search.css';
 
 const Searches = () => {
     const [recentSearches, setRecentSearches] = useState([]);
@@ -61,7 +61,7 @@ const Searches = () => {
                     
                     <li key={search}>
                         <div onClick={() => viewRecipe(event)} className="recent-search-container">
-                            <p className="recent-search">{search}</p>
+                            <p>{search}</p>
                             <svg width="0" height="0">
                                 <linearGradient id="blue-gradient-light" x1="100%" y1="100%" x2="0%" y2="0%">
                                     <stop stopColor="rgba(27,191,210,0.9672911400888481)" offset="1%" />
@@ -80,8 +80,8 @@ const Searches = () => {
             </div>
             <div className="row">
             {lastViewed.map((recipe) =>
-                <div className="col-sm">
-                    <RecipeCard key={recipe.name} name={recipe.name} img_src={require('../../assets/images/img1.jpeg')} />
+                <div className="col-sm" key={recipe.name}>
+                    <RecipeCard name={recipe.name} img_src={require('../../assets/images/img1.jpeg')} />
                 </div>
             )}
             </div>

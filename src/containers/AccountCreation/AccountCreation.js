@@ -3,8 +3,17 @@ import './account.css'
 import { Form } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
+import { useHistory } from "react-router-dom";
 
-const AccountCreation = () => {
+const AccountCreation = (props) => {
+    const history = useHistory();
+    
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        props.func('Account created successfully');
+        history.push('/');
+    }
+
     return (
         <div className="container_Account">
             <div className="pageName_Account">
@@ -33,7 +42,7 @@ const AccountCreation = () => {
                     <Form.Label>Confirm Password</Form.Label>
                     <Form.Control type="text" placeholder="Confirm Password" />
                 </Form.Group>
-                <button className="btn_Account">Register</button>
+                <button className="btn_Account" onClick={handleSubmit}>Register</button>
             </Form>
         </div>
     )
