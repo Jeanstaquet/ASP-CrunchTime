@@ -3,7 +3,7 @@
     align-items: center;
     justify-content: center;
     padding: 25px;
-    background-color: lightgray;
+    /*background-color: lightgray;*/
 }
 
 .phone {
@@ -11,5 +11,5 @@
     max-height: 844px;
     overflow-y: scroll;
     height: 844px;
-    background-color: white;
+    /*background-color: white;*/
 }
