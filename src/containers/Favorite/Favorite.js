@@ -24,16 +24,17 @@ const Favorites = () => {
                     <FontAwesomeIcon icon={faArrowLeftLong} />
                 </Navbar>
             </div>
-
             <Container className='content-body'>
                 <Row className='layout-row'>
                     <Col className='layout-col'>
                         <Card className='recipe-card'>
-                            <Navbar className='topBar' expand="lg" variant="light" bg="light">
+                            <Navbar className='topBar' expand="lg" variant="light">
                                 <img className='recipe-photo' src={img1} alt="picture of meal" />
                             </Navbar>
-                            <h5 className="page-title" id='user-favorites' D>A favorite</h5>
-                            <img className='icon' src={lightModeHeart} alt="favorite icon" />
+                            <Navbar className='topBar' expand="lg" variant="light">
+                                <h5 className="page-title" id='user-favorites' D>A favorite</h5>
+                                <img className='icon' src={lightModeHeart} alt="favorite icon" />
+                            </Navbar>
                             <Container typeof='fluid' className='Favorite-List'>
                                 <div className="ratings">
                                     <div className="stars">
@@ -49,11 +50,13 @@ const Favorites = () => {
                     </Col>
                     <Col>
                         <Card className='recipe-card'>
-                            <Navbar className='topBar' expand="lg" variant="light" bg="light">
-                                <img className='recipe-photo' src={img1} alt="food from the recipe" />
+                            <Navbar className='topBar' expand="lg" variant="light">
+                                <img className='recipe-photo' src={img1} alt="picture of meal" />
                             </Navbar>
-                            <h5 className="page-title" id='user-favorites' D>A favorite</h5>
-                            <img className='icon' src={lightModeHeart} alt="favorite icon" />
+                            <Navbar className='topBar' expand="lg" variant="light">
+                                <h5 className="page-title" id='user-favorites' D>A favorite</h5>
+                                <img className='icon' src={lightModeHeart} alt="favorite icon" />
+                            </Navbar>
                             <Container typeof='fluid' className='Favorite-List'>
                                 <div className="ratings">
                                     <div className="stars">
@@ -70,11 +73,13 @@ const Favorites = () => {
                 </Row>
                 <Row>
                     <Card className='recipe-card'>
-                        <Navbar className='topBar' expand="lg" variant="light" bg="light">
+                        <Navbar className='topBar' expand="lg" variant="light">
                             <img className='recipe-photo' src={img1} alt="picture of meal" />
                         </Navbar>
-                        <h5 className="page-title" id='user-favorites' D>A favorite</h5>
-                        <img className='icon' src={lightModeHeart} alt="favorite icon" />
+                        <Navbar className='topBar' expand="lg" variant="light">
+                            <h5 className="page-title" id='user-favorites' D>A favorite</h5>
+                            <img className='icon' src={lightModeHeart} alt="favorite icon" />
+                        </Navbar>
                         <Container typeof='fluid' className='Favorite-List'>
                             <div className="ratings">
                                 <div className="stars">
