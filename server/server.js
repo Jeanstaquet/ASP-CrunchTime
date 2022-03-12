@@ -6,6 +6,8 @@ const { data } = require('../data')
 const mongoose = require('mongoose')
 const MongoDBStore = require('connect-mongodb-session')(session)
 const Recipe = require('./models/recipe')
+const usersRoutes = require('./routes/users')
+const recipieRoutes = require('./routes/recipe')
 
 const app = express()
 
@@ -24,6 +26,9 @@ const store = new MongoDBStore({
     collection: 'sessions',
 })
 
+app.use(bodyParser.json({ limit: '10mb' }))
+app.use(bodyParser.urlencoded({ limit: '10mb' }))
+
 app.use(
     session({
         secret: 'sss',
@@ -32,6 +37,9 @@ app.use(
         store: store,
     })
 )
+
+app.use(usersRoutes)
+app.use(recipieRoutes)
 
 app.get('/first', (req, res, next) => {
     res.send({ data: data[0] })
@@ -42,8 +50,13 @@ app.get('/random', (req, res, next) => {
     res.send({ data: data[random] })
 })
 
-app.use(bodyParser.json({ limit: '10mb' }))
-app.use(bodyParser.urlencoded({ limit: '10mb' }))
+app.get('/', (req, res, next) => {
+    res.send({ status: 404 })
+})
+
+app.post('/', (req, res, next) => {
+    res.send({ status: 404 })
+})
 
 mongoose
     .connect(MONGODB_URI)
