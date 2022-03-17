@@ -2,14 +2,17 @@
     display: flex;
     align-items: center;
     justify-content: center;
-    padding: 25px;
     background-color: lightgray;
 }
 
 .phone {
     width: 390px;
     max-height: 844px;
-    overflow-y: scroll;
+    padding: 1%;
     height: 844px;
     background-color: white;
+}
+
+.scrollbar {
+    padding-right: 0%;
 }
