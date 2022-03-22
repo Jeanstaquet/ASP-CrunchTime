@@ -180,8 +180,8 @@ const AccountCreation = () => {
                     }}
                 >
                     {newUser
-                        ? 'I already an account'
-                        : 'I want to create an account'}
+                        ? 'Sign in'
+                        : 'Create an account'}
                 </button>
             </Form>
         </div>
