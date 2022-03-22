@@ -17,7 +17,7 @@ ul li {
 
 .clear-btn span {
     background: var(--blue-gradient-light);
-    -webkit-background-clip: text;
+    /* -webkit-background-clip: text; */
     -webkit-text-fill-color: transparent;
 }
 
