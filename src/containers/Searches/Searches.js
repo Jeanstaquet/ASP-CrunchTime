@@ -17,21 +17,18 @@ const Searches = () => {
     }, [lastViewed]);
 
     const handleClear = (e) => {
-        for (var i = 0; i < e.path.length; i++) {
-            var classes = e.path[i].classList;
-            if (typeof classes != 'undefined') {
-                if (classes.value == "searches-heading") {
-                    setRecentSearches([]);
-                }
-                if (classes.value == "viewed-heading") {
-                    setLastViewed([]);
-                }
-            }           
-        }      
+        var parent = e.target.parentNode.parentNode.className;
+        if (parent === "searches-heading") {
+            setRecentSearches([]);
+        }
+
+        if (parent === "viewed-heading") {
+            setLastViewed([]);
+        }  
     }
 
     const viewRecipe = (e) => {
-        const name = e.target.children[0].innerText;
+        const name = e.target.innerText;
         const timestamp = e.timeStamp;
         var new_arr = lastViewed;
         new_arr = findDuplicates(new_arr, name, timestamp);
