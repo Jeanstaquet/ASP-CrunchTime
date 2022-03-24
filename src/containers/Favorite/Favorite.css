@@ -2,19 +2,17 @@
     display: flex;
     flex-wrap: wrap;
     flex-direction:column;
-
+    color: black;
 }
 .page-title {
     display:-webkit-inline-box;
     float:none;
     align-items: center;
 }
-
-
+  /* keep icons small */
 .icon {
     max-width: min-content;
     max-height: min-content;
-    color: black;
 }
 .topBar {
     /* keep the elements in the top bar separated enough to be clean and readable: */
@@ -29,9 +27,7 @@
     /* Recipe card should be as big as it can be to show all the contents */
     max-width: max-content;
     max-height: max-content;
-    background-color: aquamarine;
-    /* margin-left: auto; */
-   
+    background-color: rgb(29, 255, 142);
 }
 .recipe-photo {
     max-width:min-content;
@@ -41,11 +37,14 @@
     padding-bottom: 2%;
     padding-top: 2%
 }
-/* .layout-row {
- max-width: 100%;
- max-height:max-content;
+ .layout-row {
+ max-width:  fit-content;
+ max-height: fit-content;
+ padding-left: 1%;
+ padding-bottom: 5%;
 }
+
 .layout-col {
-    max-width: max%;
-    max-height:max-content;
-   } */
+    max-width:  fit-content;
+    max-height: fit-content;
+   } 
