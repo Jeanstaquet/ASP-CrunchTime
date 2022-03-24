@@ -3,7 +3,6 @@ const r = express.Router()
 const Users = require('../models/users')
 
 r.post('/signIn', async (req, res, next) => {
-    console.log('e')
     if (req.body.name.trim() === '') {
         return res.send('Name is missing')
     }
@@ -11,6 +10,7 @@ r.post('/signIn', async (req, res, next) => {
     if (req.body.password === '') {
         return res.send('Password is missing')
     }
+    console.log('test')
     try {
         const signInUser = await Users.findOne({ name: req.body.name })
 

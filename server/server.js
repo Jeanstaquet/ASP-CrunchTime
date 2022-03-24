@@ -62,7 +62,7 @@ mongoose
     .connect(MONGODB_URI)
     .then(() => {
         console.log('DB Connection ok')
-        app.listen(3001)
+        //app.listen(3001)
         Recipe.find().then((rep) => {
             if (rep.length !== data.length) {
                 for (let i = 0; i < Math.abs(data.length - rep.length); i++) {
@@ -85,3 +85,5 @@ mongoose
         })
     })
     .catch((error) => console.log(error))
+
+module.exports = app
