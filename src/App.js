@@ -21,7 +21,7 @@ function App() {
         <div className="app">
             <UserCtx.Provider value={providerUserValue}>
                 <div className="phone">
-                    <Scrollbars className='scrollbar' style={{ width: "100%", height: "100%" }}>
+                    <Scrollbars className='scrollbar' style={{ width: "100%", height: "100%", scrollbarColor: "blue" }}>
                         <Router>
                             <Switch>
                                 <Route path="/Explore" exact component={Explore} />
