@@ -1,4 +1,3 @@
-
 import React from 'react';
 
 const RecipeCard = (props) => {
@@ -13,4 +12,3 @@ const RecipeCard = (props) => {
 }
 
 export default RecipeCard;
-
