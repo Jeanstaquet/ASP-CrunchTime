@@ -29,7 +29,7 @@ const Favorites = () => {
                 <Row className='layout-row'>
                     <Col className='layout-col'>
                         <Card className='recipe-card'>
-                            <Navbar className='topBar' expand="lg" variant="light" bg="light">
+                            <Navbar className='topBar' expand="lg" variant="light">
                                 <img className='recipe-photo' src={img1} alt="picture of meal" />
                                 <h5 className="page-title" id='user-favorites' D>A favorite</h5>
                                 <img className='icon' src={lightModeHeart} alt="favorite icon" />
@@ -50,7 +50,7 @@ const Favorites = () => {
                     </Col>
                     <Col>
                         <Card className='recipe-card'>
-                            <Navbar className='topBar' expand="lg" variant="light" bg="light">
+                            <Navbar className='topBar' expand="lg" variant="light" >
                                 <img className='recipe-photo' src={img1} alt="food from the recipe" />
                                 <h5 className="page-title" id='user-favorites' D>A favorite</h5>
                                 <img className='icon' src={lightModeHeart} alt="favorite icon" />
@@ -72,7 +72,7 @@ const Favorites = () => {
                 </Row>
                 <Row>
                     <Card className='recipe-card'>
-                        <Navbar className='topBar' expand="lg" variant="light" bg="light">
+                        <Navbar className='topBar' expand="lg" variant="light" >
                             <img className='recipe-photo' src={img1} alt="picture of meal" />
                             <h5 className="page-title" id='user-favorites' D>A favorite</h5>
                             <img className='icon' src={lightModeHeart} alt="favorite icon" />
