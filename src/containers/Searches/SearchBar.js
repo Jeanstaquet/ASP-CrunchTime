@@ -1,4 +1,3 @@
-
 import React, { useState, useEffect } from 'react';
 import smallLogo from '../../images/smallLogo.png'
 import './Search.css';

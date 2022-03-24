@@ -61,14 +61,14 @@ ul li {
 }
 
 .card-container h4 {
-    padding: 2px 16px;
+    padding: 2%;
     text-align: center;
 }
 
 .logo-small {
-    height: 30px;
-    width: 30px;
-    border-radius: 50%;
+    height: 10%;
+    width: 10%;
+    border-radius: 20%;
     display: inline-block;
     background: var(--blue-gradient);
     color: white;
