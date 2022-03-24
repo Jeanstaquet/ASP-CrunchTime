@@ -9,7 +9,7 @@ import Recipe from './containers/Recipe'
 import { UserCtx } from './containers/Context/user'
 import Searches from './containers/Searches'
 import 'bootstrap/dist/css/bootstrap.min.css'
-import { Scrollbars } from 'react-custom-scrollbars';
+import { Scrollbars } from 'react-custom-scrollbars-2';
 
 function App() {
     const [user, setUser] = useState({})
