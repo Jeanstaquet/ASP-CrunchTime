@@ -1,6 +1,6 @@
+
 import React, { useState, useEffect } from 'react';
 import smallLogo from '../../images/smallLogo.png'
-import 'bootstrap/dist/css/bootstrap.min.css'
 import './Search.css';
 
 const SearchBar = (props) => {
@@ -35,5 +35,4 @@ const SearchBar = (props) => {
         </div>
     )
 }
-
 export default SearchBar;
