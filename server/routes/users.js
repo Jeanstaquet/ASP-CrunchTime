@@ -48,7 +48,6 @@ r.post('/signUp', async (req, res, next) => {
         })
         req.session.user = newU
         newU.save()
-        console.log('dd')
         return res.send(newU)
     } catch (e) {
         res.send(e)

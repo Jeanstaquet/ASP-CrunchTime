@@ -1,3 +1,5 @@
+//Server.js code inspired from https://www.udemy.com/course/nodejs-the-complete-guide/learn/lecture/12025876?start=0#overview
+
 const session = require('express-session')
 const express = require('express')
 const bodyParser = require('body-parser')
