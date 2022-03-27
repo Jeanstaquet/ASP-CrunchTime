@@ -41,23 +41,6 @@ app.use(
 app.use(usersRoutes)
 app.use(recipieRoutes)
 
-app.get('/first', (req, res, next) => {
-    res.send({ data: data[0] })
-})
-
-app.get('/random', (req, res, next) => {
-    let random = Math.floor(Math.random(0, data.length - 1) * 10)
-    res.send({ data: data[random] })
-})
-
-app.get('/', (req, res, next) => {
-    res.send({ status: 404 })
-})
-
-app.post('/', (req, res, next) => {
-    res.send({ status: 404 })
-})
-
 mongoose
     .connect(MONGODB_URI)
     .then(() => {

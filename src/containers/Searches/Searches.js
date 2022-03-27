@@ -10,10 +10,19 @@ const Searches = () => {
     const [input, setInput] = useState('')
 
     useEffect(() => {
-        axios.get('http://localhost:3001/recipies').then((resp) => {
-            const { data } = resp
-            setData(data)
-        })
+        try {
+            axios.get('http://localhost:3001/recipies').then((resp) => {
+                const { data } = resp
+                setData(data)
+            })
+        } catch (error) {
+            setData({
+                name: '',
+                imgURL: '',
+                type: '',
+                stars: 0,
+            })
+        }
     }, [])
 
     return (
