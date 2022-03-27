@@ -20,6 +20,7 @@
 .Time {
     font-size: medium;
     font-weight: bold;
+    text-align: center;
 }
 .topBar {
     padding-left: 3%;
@@ -27,11 +28,17 @@
     padding-bottom: 4%;
     padding-top: 2%;
 }
-.Time {
-    text-align: center;
-}
 .sectionTitle {
     text-align: center;
+    font-weight: bold;
+    background: linear-gradient(
+    45deg,
+    rgba(17, 169, 255) 0%,
+    rgba(3, 241, 204) 100%);
+    border-radius: 20px;
+}
+.list {
+    font-weight: 450;
 }
 .review {
     padding-left: 3%;
@@ -50,13 +57,11 @@
 .review-text {
     padding-left: 5%;
     padding-right: 3%;
-
 }
-
 .stars {
     text-align: center;
-    color: darkgreen;
+    color: rgb(12, 165, 157);
 }
 #star1, #star2, #star3 {
-    color: darkgreen;
+    color: rgb(12, 165, 157);
 }
