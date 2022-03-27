@@ -1,3 +1,5 @@
+// The scrollbar we use in this app comes from  https://github.com/malte-wessel/react-custom-scrollbars/blob/master/docs/customization.md 
+// we found it as a result of this tutorial video: https://www.youtube.com/watch?v=7GO4P0ewVfI
 import './App.css'
 import React, { useMemo, useState } from 'react'
 import { Route, Switch } from 'react-router-dom'
