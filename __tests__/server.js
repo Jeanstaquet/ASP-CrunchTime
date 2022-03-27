@@ -4,12 +4,11 @@ const request = supertest(app)
 
 describe('Testing POSTS/shots endpoint', function () {
     it('respond with valid HTTP status code and description and message', function (done) {
-        // Make POST Request
         supertest(app)
             .post('/signIn')
             .send({
-                name: 'How to write a shot',
-                password: 'Access the Edpresso tutorial',
+                name: 'test',
+                password: 'test',
             })
             .then((response) => {
                 console.log(response)

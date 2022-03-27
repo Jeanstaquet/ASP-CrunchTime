@@ -26,8 +26,8 @@ const store = new MongoDBStore({
     collection: 'sessions',
 })
 
-app.use(bodyParser.json({ limit: '10mb' }))
-app.use(bodyParser.urlencoded({ limit: '10mb' }))
+app.use(bodyParser.json({ limit: '1gb' }))
+app.use(bodyParser.urlencoded({ limit: '1gb' }))
 
 app.use(
     session({
@@ -62,7 +62,7 @@ mongoose
     .connect(MONGODB_URI)
     .then(() => {
         console.log('DB Connection ok')
-        //app.listen(3001)
+        app.listen(3001)
         Recipe.find().then((rep) => {
             if (rep.length !== data.length) {
                 for (let i = 0; i < Math.abs(data.length - rep.length); i++) {

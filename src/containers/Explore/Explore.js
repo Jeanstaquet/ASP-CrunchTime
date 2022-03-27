@@ -3,17 +3,16 @@ import axios from 'axios'
 import './explore.css'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faMagnifyingGlass, faStar } from '@fortawesome/free-solid-svg-icons'
-import img1 from '../../assets/images/img1.jpeg'
 const Explore = () => {
     const [data, setData] = useState([])
 
     useEffect(() => {
-        axios.get('http://localhost:3001/first').then((resp) => {
-            const { data } = resp.data
+        axios.get('http://localhost:3001/recipies').then((resp) => {
+            const { data } = resp
             setData(data)
         })
     }, [])
-    console.log(data)
+
     return (
         <div className="container_Explore">
             <div className="banner_Explore">
@@ -29,65 +28,88 @@ const Explore = () => {
             </div>
             <div className="recipeListTop_Explore">
                 <div className="recipeItemTop_Explore">
-                    <img src={data && data.imageURL} alt="placeholder" />
+                    <img
+                        src={data.length && data[0].imgURL}
+                        alt="placeholder"
+                    />
                     <div className="recipeItemTitleTop_Explore">
-                        {data && data.name}
+                        {data.length && data[0].name}
                     </div>
-                    <div className="recipeItemDescTop_Explore">Description</div>
+                    <div className="recipeItemDescTop_Explore">
+                        {data.length && data[0].description}
+                    </div>
                     <div className="recipeItemStarContTop_Explore">
                         <div className="stars_Explore">
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
+                            {data.length &&
+                                new Array(data[0].stars)
+                                    .fill(0)
+                                    .map((x, idx) => (
+                                        <FontAwesomeIcon
+                                            icon={faStar}
+                                            key={idx}
+                                        />
+                                    ))}
                         </div>
-                        <div>1234</div>
+                        <div>{data.length && data[0].type}</div>
                     </div>
                 </div>
                 <div className="recipeItemTop_Explore">
-                    <img src={img1} alt="placeholder" />
+                    <img
+                        src={data.length && data[1].imgURL}
+                        alt="placeholder"
+                    />
                     <div className="recipeItemTitleTop_Explore">
-                        Chicken Curry
+                        {data.length && data[1].name}
                     </div>
-                    <div className="recipeItemDescTop_Explore">Description</div>
+                    <div className="recipeItemDescTop_Explore">
+                        {data.length && data[1].description}
+                    </div>
                     <div className="recipeItemStarContTop_Explore">
                         <div className="stars_Explore">
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
-                            <FontAwesomeIcon icon={faStar} />
+                            {data.length &&
+                                new Array(data[1].stars)
+                                    .fill(0)
+                                    .map((x, idx) => (
+                                        <FontAwesomeIcon
+                                            icon={faStar}
+                                            key={idx}
+                                        />
+                                    ))}
                         </div>
-                        <div>1234</div>
+                        <div>{data.length && data[1].type}</div>
                     </div>
                 </div>
             </div>
             <hr></hr>
             <div className="recipeListMid_Explore">
                 <div className="recipeItemMid_Explore">
-                    <img src={img1} alt="placeholder" />
-                    <div>Seasonal Recipies</div>
+                    <img
+                        src={data.length && data[2].imgURL}
+                        alt="placeholder"
+                    />
+                    <div>{data.length && data[2].name}</div>
                 </div>
                 <div className="recipeItemMid_Explore">
-                    <img src={img1} alt="placeholder" />
-                    <div>Seasonal Recipies</div>
+                    <img
+                        src={data.length && data[3].imgURL}
+                        alt="placeholder"
+                    />
+                    <div>{data.length && data[3].name}</div>
                 </div>
                 <div className="recipeItemMid_Explore">
-                    <img src={img1} alt="placeholder" />
-                    <div>Seasonal Recipies</div>
+                    <img
+                        src={data.length && data[4].imgURL}
+                        alt="placeholder"
+                    />
+                    <div>{data.length && data[4].name}</div>
                 </div>
             </div>
             <hr></hr>
             <div className="recipeListBottom_Explore">
-                <img src={img1} alt="placeholder" />
-                <img src={img1} alt="placeholder" />
-                <img src={img1} alt="placeholder" />
-                <img src={img1} alt="placeholder" />
-                <img src={img1} alt="placeholder" />
-                <img src={img1} alt="placeholder" />
-                <img src={img1} alt="placeholder" />
-                <img src={img1} alt="placeholder" />
+                {data.length &&
+                    data.map((r, idx) => (
+                        <img src={r.imgURL} key={idx} alt="placeholder" />
+                    ))}
             </div>
         </div>
     )

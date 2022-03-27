@@ -10,7 +10,7 @@ r.post('/signIn', async (req, res, next) => {
     if (req.body.password === '') {
         return res.send('Password is missing')
     }
-    console.log('test')
+
     try {
         const signInUser = await Users.findOne({ name: req.body.name })
 

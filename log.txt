@@ -1,0 +1,341 @@
+commit 9c2301743d7583bac0344a09f94652d9759e8857
+Merge: e25fda1 802d78b
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Mar 24 22:21:42 2022 +0000
+
+    Merge branch 'main' of https://github.com/Jeanstaquet/ASP-CrunchTime into main
+
+commit e25fda12a90cad7e81f1302055b37bb7b6e2023d
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Mar 24 22:21:27 2022 +0000
+
+    Add server component
+
+commit 802d78b26e721af56f89d83c67ae7b7bae6d6586
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 24 14:59:25 2022 -0700
+
+    Favorite page reorganization
+    
+    Changed Fav page layout
+
+commit 492a9c86ec6c1ba2fd3405d4ab5fbe8012436a5c
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 24 14:58:46 2022 -0700
+
+    scrollbar changes
+
+commit bb802f9175de5af2af35eeb321911a11c15d0d66
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 24 14:01:57 2022 -0700
+
+    Changes to search page css
+    
+    Changed styling so that cards appear same size in their grid
+
+commit 8d83cbb03e7185cfcf2d3aed827a2342c8e096bb
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 24 13:45:30 2022 -0700
+
+    small changes
+
+commit e6ba30e104c13fe91e04659b5fc402114e4741f6
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 24 13:35:05 2022 -0700
+
+    moved footer and search bar stuff over
+
+commit 2056dcfc3a67a5c0d0f0d48eccbf5ae9e669c8a0
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 24 13:28:10 2022 -0700
+
+    small stuff
+
+commit 89c1df2d15b1b5c55fee2ce00de6cda1b1131936
+Merge: e197cfb a40eb13
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Mar 22 13:52:30 2022 -0700
+
+    Merge pull request #5 from Jeanstaquet/Search-page-changes
+    
+    Search page changes
+
+commit a40eb134ec95dfb5fecd731bf851eb4479829549
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Mar 22 13:48:58 2022 -0700
+
+    Update Search.css
+    
+    commented out a line that seemed not to work properly
+
+commit 9279128b5afae8e1aeee3827f57ec67617ed5b61
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Mar 22 13:35:52 2022 -0700
+
+    Update AccountCreation.js
+    
+    Change button text
+
+commit e197cfb680aae6c4431a01625a1a242931268ac5
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 17 14:01:29 2022 -0700
+
+    Footer and Modal
+    
+    Footer file exists but doesn't have anything in it yet, will add soon.
+    
+    I copied Modal code over from Jonathan's branch but it is not used anywhere in the code yet
+
+commit cddee747cc42876d9fd9b6eaab8c66b9a44475a6
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 17 13:55:16 2022 -0700
+
+    Added Jonathan's changes
+    
+    Had to do npm install react-icons to make the icons work on my device. Also made some minor formatting changes
+
+commit adc9798d420e1b6ed47a63ddcbca84bcc7ec2335
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 17 11:38:36 2022 -0700
+
+    formatting
+    
+    reformatted some <Route> lines that were taking up extra space
+
+commit 19643b8cb419db1ab604a820a390a46bb50a42ed
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Mar 17 11:35:17 2022 -0700
+
+    Scrollbar Changes
+    
+    Used react-custom-scrollbars to change the scrollbar in our app. Will be styling it in future edits
+
+commit 0294a78c7360c606e00636eca3bec0474d796a25
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Sat Mar 12 23:45:31 2022 +0000
+
+    Enable the user to create account
+
+commit 71ba46e3896d1a09f92d015069db0d361e2429aa
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Sat Mar 12 22:16:15 2022 +0000
+
+    Add DB + endpoints
+
+commit c49b7dbe340b63cd9e28f5e76780958c0e482802
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Wed Mar 9 13:59:11 2022 -0800
+
+    Changes to favorites page styling
+    
+    Got the title to appear below the image on each card, fixed location of the rating and hearts
+
+commit 3f3bed3709ed688ba8473197db5cd0564ea8018b
+Merge: 17b7a3a 760da97
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Mar 8 20:10:35 2022 -0800
+
+    Merge branch 'main' of https://github.com/Jeanstaquet/ASP-CrunchTime
+
+commit 760da9735c51804e2f6594f235c3bef0dfb8ab54
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Tue Mar 8 23:37:46 2022 +0000
+
+    Add endpoints
+
+commit b1e3ee15a2a343a4c619490a7df15a1b3b3b950d
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Tue Mar 8 22:49:25 2022 +0000
+
+    Remove eslint rule
+
+commit c5d33a8a686bfec98d6841c3530654ed34f8b046
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Tue Mar 8 22:26:19 2022 +0000
+
+    Git source for the data
+
+commit 17b7a3af0b2a33545e066a2ae3dde01cd2b09a47
+Merge: 4f6e12e 97de4e8
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Mar 8 14:26:14 2022 -0800
+
+    changes to favorite page
+
+commit 97de4e8a4078624e0cf17021b511a096f4ad1d12
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Tue Mar 8 22:24:17 2022 +0000
+
+    Add data
+
+commit 4f6e12e4f47246896c76d64403579932b47e3906
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Mar 8 08:59:04 2022 -0800
+
+    Work on favorites page, other small changes
+    
+    Changed the name of an image file, added recipe card on the favorites page and some simple styling. More updates soon
+
+commit 01d1dd60b70c273ca08200c86d8122cb1a0688db
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Mar 3 22:51:04 2022 +0000
+
+    Add a scroll bar
+
+commit b6e0b85da28f2da01574608c4fd894e45a4cab18
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Mar 3 22:28:41 2022 +0000
+
+    Adding the server
+
+commit 37fd36401c528329305e38c86f7a9236ff955a21
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Mar 1 12:59:52 2022 -0800
+
+    Change RecipeDescription to Recipe
+    
+    Changed the name of RecipeDescription page and all its references so that it's easier to switch to from another page. also changed some formatting,
+
+commit 99dbded71e49b735992f82b3a15a017784ef525a
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Fri Feb 25 01:28:04 2022 +0000
+
+    Fix path for RecipeDescription
+
+commit 0c12ffe93178d86f3f09db34418fde18a83720f3
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Feb 24 17:25:05 2022 -0800
+
+    Recipe page work (#2)
+    
+    * editing recipe description
+    
+    * added semicolon to last line
+    
+    * added css to style the page
+    
+    * Work on recipe page
+    
+    Added text and formatting/styling to the page
+    
+    * Small edits to css
+    
+    added a basic scrollbar (which will need more work later), and fixed some spacing issues with the topbar
+
+commit ec63ac45fcab6ef2708a150fe3cdd59a9def9001
+Merge: 94c8211 a8f8fbf
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Feb 24 22:29:22 2022 +0000
+
+    Merge branch 'main' of https://github.com/Jeanstaquet/ASP-CrunchTime into main
+
+commit 94c82116a86053251f092f768978df0280d67a76
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Feb 24 22:29:06 2022 +0000
+
+    Fix the router
+
+commit a8f8fbf5df2955f63daf662221abbe10ba4f52fc
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Feb 22 12:11:50 2022 -0800
+
+    Delete recipe.html
+
+commit 92a46e1a4e692d2f64c707665189d48a427df379
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Feb 17 22:09:58 2022 +0000
+
+    Delete lint
+
+commit bddd297b72371041b334ecb8fcc09f3a5c008ae2
+Merge: bf34653 0319c82
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Wed Feb 16 12:05:46 2022 -0800
+
+    Merge pull request #1 from Jeanstaquet/Image-changes
+    
+    Image changes
+
+commit bf34653288f7c58a0ddf06a9b82fe831ef1745fe
+Merge: 8c53cdb fe0080b
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Tue Feb 15 15:57:12 2022 -0800
+
+    Merge branch 'main' of https://github.com/Jeanstaquet/ASP-CrunchTime
+
+commit fe0080b7c9f9d7d3bb334c28bcc9e7a05fd02c9b
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Fri Feb 11 00:55:33 2022 +0000
+
+    Add more content for the Explore Page
+
+commit 5ae36bd2fd944c4ed0cee881cd2fbe747c81ad32
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Fri Feb 11 00:07:36 2022 +0000
+
+    Add the AccountCreation page + structure of the Explore page
+
+commit 0319c82690abd4bda43682e753f6c4a024d91fd4
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Feb 10 14:25:25 2022 -0800
+
+    Image folder
+    
+    Added images to image folder for use as icons/buttons, etc
+
+commit 63850ba6daa83b51f410d9ed6c2a4876324506ae
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Feb 10 14:08:52 2022 -0800
+
+    Create 40x40 AB.png
+
+commit 8c53cdbf57829c33ec24c4271343ea079a1e89ad
+Merge: c127345 d27ed2c
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Feb 10 13:57:31 2022 -0800
+
+    Merge branch 'main' of https://github.com/Jeanstaquet/ASP-CrunchTime
+
+commit c127345d368a519638f35186d30e96e613ae0666
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Feb 10 12:05:13 2022 -0800
+
+    Added Recipe page
+    
+    Added recipe page with some basic structure just to get started
+
+commit 8d292b61f768a454ad0116b812ce7e9ec9d3cc24
+Author: Natalya <65422154+natalyaJk@users.noreply.github.com>
+Date:   Thu Feb 10 10:12:24 2022 -0800
+
+    Update index.html
+
+commit d27ed2ce761c6250fa7fe507ccd6401ad1522900
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Tue Feb 8 00:29:49 2022 +0000
+
+    Add the css for the structure of the phone
+
+commit 7aa3f82ee907bb68e52a8bcfeafac4f703786a31
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Tue Feb 8 00:19:12 2022 +0000
+
+    Add every page structure
+
+commit 4ef489b7158d5aed0d03462c448194ec25241f77
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Jan 20 21:52:06 2022 +0000
+
+    Add basic HTML to check if the app is running
+
+commit 1ba690684bfcee3703cc03fe106f8016b424d801
+Author: Jeansta <jean.staquet8@gmail.com>
+Date:   Thu Jan 20 21:17:49 2022 +0000
+
+    Add the react boilerplate
+
+commit 4b0851501539d4aa15b9417ef9e0cb5476d79882
+Author: Jean <45966964+Jeanstaquet@users.noreply.github.com>
+Date:   Thu Jan 20 22:12:16 2022 +0100
+
+    Initial commit

@@ -179,9 +179,7 @@ const AccountCreation = () => {
                         setNewUser(!newUser)
                     }}
                 >
-                    {newUser
-                        ? 'Sign in'
-                        : 'Create an account'}
+                    {newUser ? 'Sign in' : 'Create an account'}
                 </button>
             </Form>
         </div>
