@@ -6,10 +6,10 @@ import { Container, Navbar } from 'react-bootstrap'
 import { Row, Col } from 'react-bootstrap'
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faArrowLeftLong } from '@fortawesome/free-solid-svg-icons'
-import smallLogo from '../../images/smallLogo.png'
 import lightModeHeart from '../../images/lightModeHeart.png'
 import { faStar } from '@fortawesome/free-solid-svg-icons'
 import { Card } from 'react-bootstrap'
+import smallLogo from '../../images/smallLogo.png'
 import './Favorite.css'
 
 const Favorites = () => {
@@ -29,7 +29,12 @@ const Favorites = () => {
     return (
         <div className="Favorite-Page">
             <div className="topBar">
-                <Navbar expand="lg" variant="light" bg="light">
+                <Navbar
+                    className="topBar"
+                    expand="lg"
+                    variant="light"
+                    bg="light"
+                >
                     <img
                         className="smallLogo"
                         id="CTlogo"
@@ -39,7 +44,10 @@ const Favorites = () => {
                     <div className="page-title" id="user-favorites">
                         Your Favorites
                     </div>
-                    <FontAwesomeIcon icon={faArrowLeftLong} />
+                    <FontAwesomeIcon
+                        className="smallLogo"
+                        icon={faArrowLeftLong}
+                    />
                 </Navbar>
             </div>
 

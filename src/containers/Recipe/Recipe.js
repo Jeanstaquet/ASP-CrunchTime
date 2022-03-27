@@ -50,7 +50,6 @@ const Recipe = () => {
                     <div className="CookTime">Cook Time:</div>
                     <div className="OverallTime">Overall Time:</div>
                 </div>
-
                 <div className="ingredientList">
                     <div className="sectionTitle">Here's what you'll need!</div>
                     <div className="list">

@@ -2,7 +2,7 @@
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    margin: 0 10px 0 10px;
+    margin: 1%;
 }
 
 ul li {
@@ -25,17 +25,18 @@ ul li {
     display: flex;
     justify-content: space-between;
     flex-direction: row;
-    border-width: 2px;
+    border-width: 1px;
     border-style: none none solid none;
     border-image-slice: 1;
     border-image-source: var(--blue-gradient);
-    margin: 0 40px 5px 0;
+    padding-left:  3%;
+    padding-right: 3%;
     cursor: pointer;
 }
 
 .search-bar {
     display: inline-grid;
-    border: 2px solid;
+    border: 1px solid;
     border-image-slice: 1;
     border-image-source: var(--blue-gradient);
     margin: 10px 0 10px 0;
@@ -66,13 +67,14 @@ ul li {
 }
 
 .logo-small {
-    height: 10%;
-    width: 10%;
+    height: fit-content;
+    width: fit-content;
     border-radius: 20%;
     display: inline-block;
     background: var(--blue-gradient);
     color: white;
     text-align: center;
-    padding: 2px 0;
+
+    padding-right: 2%;
     margin: 10px 0 10px 0;
 }
