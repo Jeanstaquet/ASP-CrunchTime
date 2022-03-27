@@ -36,7 +36,11 @@ const Explore = () => {
                         {data.length && data[0].name}
                     </div>
                     <div className="recipeItemDescTop_Explore">
-                        {data.length && data[0].description}
+                        {data.length &&
+                            data[0].description
+                                .split(' ')
+                                .slice(0, 50)
+                                .join(' ')}
                     </div>
                     <div className="recipeItemStarContTop_Explore">
                         <div className="stars_Explore">
@@ -62,7 +66,11 @@ const Explore = () => {
                         {data.length && data[1].name}
                     </div>
                     <div className="recipeItemDescTop_Explore">
-                        {data.length && data[1].description}
+                        {data.length &&
+                            data[1].description
+                                .split(' ')
+                                .slice(0, 50)
+                                .join(' ')}
                     </div>
                     <div className="recipeItemStarContTop_Explore">
                         <div className="stars_Explore">
