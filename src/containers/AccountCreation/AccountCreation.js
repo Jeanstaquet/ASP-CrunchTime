@@ -1,3 +1,5 @@
+// structure of this page largely influenced by: https://getbootstrap.com/docs/4.0/components/forms/
+
 import React, { useContext, useState } from 'react'
 import './account.css'
 import axios from 'axios'
